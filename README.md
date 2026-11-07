@@ -14,7 +14,7 @@
 </p>
 
 ## Sobre mim
-Escreva aqui 2 ou 3 frases: quem você é, onde mora e o que está aprendendo.
+Trabalho na área de TI de um órgão público federal, em Recife, com contato direto com a rotina de suporte e sistemas de uma grande instituição. Em paralelo, curso de Analise e desenvolvimento de Sistemas, Principal área de foco nos estudos em segurança da informação e banco de dados...
 
 ## Formação
 | Curso | Instituição | Situação |
