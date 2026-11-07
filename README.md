@@ -1,6 +1,6 @@
  <h1 align="center">Miguel Douglas</h1>
 
-<p align="center"><b>Estudante de Análise e Desenvolvimento de Sistemas | Python | Cibersegurança</b></p>
+<p align="center"><b>Estudante de Análise e Desenvolvimento de Sistemas | Python | Cibersegurança e  profissional de TI em órgão público federal.</b></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelDouglassketch/miguelDouglassketch/output/breakout-contribution-graph-dark.svg">
