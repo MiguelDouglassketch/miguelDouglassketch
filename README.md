@@ -1,10 +1,12 @@
-<h1 align="center">Miguel Douglas</h1>
+ <h1 align="center">Miguel Douglas</h1>
 
 <p align="center"><b>Estudante de Análise e Desenvolvimento de Sistemas | Python | Cibersegurança</b></p>
 
-<p align="center">
-  <img alt="navio pirata coletando commits" src="https://raw.githubusercontent.com/MiguelDouglassketch/miguelDouglassketch/pirata/navio-pirata.svg">
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelDouglassketch/miguelDouglassketch/output/breakout-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MiguelDouglassketch/miguelDouglassketch/output/breakout-contribution-graph.svg">
+  <img alt="breakout contribution graph" src="https://raw.githubusercontent.com/MiguelDouglassketch/miguelDouglassketch/output/breakout-contribution-graph.svg">
+</picture>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=MiguelDouglassketch&label=visitas&color=555555&style=flat">
