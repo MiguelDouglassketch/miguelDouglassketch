@@ -20,6 +20,7 @@ Trabalho na área de TI de um órgão público federal, em Recife, com contato d
 | Curso | Instituição | Situação |
 |---|---|---|
 | Análise e Desenvolvimento de Sistemas | Estácio | Em andamento |
+| Técnico em redes de computador | ETE | Concluído | 
 
 ## Stack
 
