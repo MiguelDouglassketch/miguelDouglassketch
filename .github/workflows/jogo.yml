@@ -2,11 +2,17 @@ name: Navio Pirata
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 */12 * * *"   # a cada 12 horas (00:00 e 12:00 UTC)
+  workflow_dispatch:          # botão para rodar manualmente
+  push:
+    branches: [main]          # roda quando você editar o README ou o gerador
 
 permissions:
   contents: write
+
+concurrency:
+  group: navio-pirata
+  cancel-in-progress: true
 
 jobs:
   generate:
