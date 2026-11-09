@@ -1,6 +1,6 @@
- <h1 align="center">Miguel Douglas</h1>
+<h1 align="center">Miguel Douglas</h1>
 
-<p align="center"><b>Estudante de Análise e Desenvolvimento de Sistemas | Python | Cibersegurança e  profissional de TI em órgão público federal.</b></p>
+<p align="center"><b>Estudante de Análise e Desenvolvimento de Sistemas | Python | Cibersegurança | Profissional de TI em órgão público federal</b></p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MiguelDouglassketch/miguelDouglassketch/output/breakout-contribution-graph-dark.svg">
@@ -14,13 +14,19 @@
 </p>
 
 ## Sobre mim
-Trabalho na área de TI de um órgão público federal, em Recife, com contato direto com a rotina de suporte e sistemas de uma grande instituição. Em paralelo, curso de Analise e desenvolvimento de Sistemas, Principal área de foco nos estudos em segurança da informação e banco de dados...
+Trabalho na área de TI de um órgão público federal, em Recife, com contato direto com a rotina de suporte e sistemas de uma grande instituição. Em paralelo, curso Análise e Desenvolvimento de Sistemas, com foco principal em segurança da informação e banco de dados.
 
 ## Formação
 | Curso | Instituição | Situação |
 |---|---|---|
 | Análise e Desenvolvimento de Sistemas | Estácio | Em andamento |
-| Técnico em redes de computador | ETE | Concluído | 
+| Técnico em Redes de Computadores | ETE | Concluído |
+
+## Projetos
+| Projeto | Descrição | Tecnologias |
+|---|---|---|
+| [Ferramentas-de-Suporte-TI](https://github.com/MiguelDouglassketch/Ferramentas-de-Suporte-TI) | Ferramentas para diagnóstico de sistema e rede | Python |
+| [Sistema-de-Chamados-Help-Desk](https://github.com/MiguelDouglassketch/Sistema-de-Chamados-Help-Desk) | Sistema de chamados de help desk no terminal, com dados salvos em JSON | Python, JSON |
 
 ## Stack
 
@@ -37,10 +43,10 @@ Trabalho na área de TI de um órgão público federal, em Recife, com contato d
 - Aprender Python
 - Estudar cibersegurança
 - Praticar Git e GitHub
-- Desenvolvimento de APIs.
-- Banco de dados SQL.
-- Suporte técnico e infraestrutura.
-- Linux e automação.
+- Desenvolvimento de APIs
+- Banco de dados SQL
+- Suporte técnico e infraestrutura
+- Linux e automação
 
 ## Contato
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:migueldouglasdev@gmail.com)
