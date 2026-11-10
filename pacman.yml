@@ -1,0 +1,27 @@
+name: Pac-Man das contribuições
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # a cada 6 horas (troque por "0 */12 * * *" para 12h)
+  workflow_dispatch:         # permite rodar manualmente
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Gerar o SVG do Pac-Man
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+      - name: Publicar na branch output
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
