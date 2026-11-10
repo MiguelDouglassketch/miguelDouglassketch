@@ -1,0 +1,14 @@
+{
+  "title": "Radar de habilidades",
+  "subtitle": "Autoavaliação (0-100) — edite com seus valores reais",
+  "max": 100,
+  "axes": [
+    {"label": "Python", "value": 55},
+    {"label": "Cibersegurança", "value": 45},
+    {"label": "SQL", "value": 50},
+    {"label": "Redes", "value": 70},
+    {"label": "Suporte TI", "value": 80},
+    {"label": "Linux", "value": 50},
+    {"label": "Git/GitHub", "value": 55}
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "handle": "MiguelDouglassketch",
+  "window_title": "profile.sh --live",
+  "footer": "Aprendendo Python · Estudando cibersegurança_",
+  "timezone": "UTC-3 · RECIFE",
+  "info": [
+    ["Nome", "Miguel Douglas"],
+    ["Cargo", "Estudante de ADS · Profissional de TI"],
+    ["Origem", "Recife, PE · Brasil"],
+    ["Formação", "Análise e Desenv. de Sistemas"],
+    ["Técnico", "Redes de Computadores (ETE)"],
+    ["Status", "Aprendendo + Praticando + Entregando"],
+    ["Linguagem", "Python"],
+    ["Banco", "SQL"],
+    ["Foco", "Cibersegurança"],
+    ["Ferramentas", "Git · GitHub · Linux"],
+    ["GitHub", "MiguelDouglassketch"],
+    ["E-mail", "migueldouglasdev@gmail.com"]
+  ]
+}
