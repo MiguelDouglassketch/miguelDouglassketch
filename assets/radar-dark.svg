@@ -13,14 +13,14 @@
 <line x1="220" y1="215" x2="170.1" y2="318.6" stroke="#2a3a4d"/>
 <line x1="220" y1="215" x2="107.9" y2="240.6" stroke="#2a3a4d"/>
 <line x1="220" y1="215" x2="130.1" y2="143.3" stroke="#2a3a4d"/>
-<g class="d"><polygon points="220.0,151.8 260.5,182.7 276.1,227.8 254.9,287.5 180.1,297.9 163.9,227.8 170.5,175.6" fill="#3ddc97" fill-opacity=".22" stroke="#3ddc97" stroke-width="2"/>
-<circle cx="220.0" cy="151.8" r="3" fill="#3ddc97"/>
-<circle cx="260.5" cy="182.7" r="3" fill="#3ddc97"/>
-<circle cx="276.1" cy="227.8" r="3" fill="#3ddc97"/>
-<circle cx="254.9" cy="287.5" r="3" fill="#3ddc97"/>
-<circle cx="180.1" cy="297.9" r="3" fill="#3ddc97"/>
-<circle cx="163.9" cy="227.8" r="3" fill="#3ddc97"/>
-<circle cx="170.5" cy="175.6" r="3" fill="#3ddc97"/>
+<g class="d"><polygon points="220.0,151.8 260.5,182.7 276.1,227.8 254.9,287.5 180.1,297.9 163.9,227.8 170.5,175.6" fill="#8f7cff" fill-opacity=".22" stroke="#8f7cff" stroke-width="2"/>
+<circle cx="220.0" cy="151.8" r="3" fill="#8f7cff"/>
+<circle cx="260.5" cy="182.7" r="3" fill="#8f7cff"/>
+<circle cx="276.1" cy="227.8" r="3" fill="#8f7cff"/>
+<circle cx="254.9" cy="287.5" r="3" fill="#8f7cff"/>
+<circle cx="180.1" cy="297.9" r="3" fill="#8f7cff"/>
+<circle cx="163.9" cy="227.8" r="3" fill="#8f7cff"/>
+<circle cx="170.5" cy="175.6" r="3" fill="#8f7cff"/>
 </g>
 <text x="220.0" y="81.0" fill="#c9d1d9" font-size="10" text-anchor="middle">Python</text>
 <text x="327.9" y="133.0" fill="#c9d1d9" font-size="10" text-anchor="start">Cibersegurança</text>

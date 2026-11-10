@@ -7,8 +7,8 @@ from pathlib import Path
 
 FONT = "'JetBrains Mono',ui-monospace,Consolas,monospace"
 THEMES = {
-    "dark":  dict(line="#2a3a4d", text="#c9d1d9", dim="#7d8590", acc="#3ddc97"),
-    "light": dict(line="#d0d7de", text="#1f2328", dim="#656d76", acc="#0a7f55"),
+    "dark":  dict(line="#2a3a4d", text="#c9d1d9", dim="#7d8590", acc="#8f7cff"),
+    "light": dict(line="#d0d7de", text="#1f2328", dim="#656d76", acc="#5a3fd6"),
 }
 
 

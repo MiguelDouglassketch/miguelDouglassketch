@@ -9,8 +9,8 @@ from pathlib import Path
 API = "https://api.github.com"
 FONT = "'JetBrains Mono',ui-monospace,Consolas,monospace"
 THEMES = {
-    "dark":  dict(bg="#111a24", line="#243447", text="#c9d1d9", dim="#7d8590", acc="#3ddc97"),
-    "light": dict(bg="#f6f8fa", line="#d0d7de", text="#1f2328", dim="#656d76", acc="#0a7f55"),
+    "dark":  dict(bg="#111a24", line="#243447", text="#c9d1d9", dim="#7d8590", acc="#8f7cff"),
+    "light": dict(bg="#f6f8fa", line="#d0d7de", text="#1f2328", dim="#656d76", acc="#5a3fd6"),
 }
 LANG_COLORS = {"Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "HTML": "#e34c26",
                "CSS": "#563d7c", "Shell": "#89e051", "Java": "#b07219", "C": "#555555", "C++": "#f34b7d",

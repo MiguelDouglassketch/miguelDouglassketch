@@ -2,7 +2,7 @@
 """Gera assets/banner-dark.svg e assets/banner-light.svg (terminal animado).
 
 Se existir assets/portrait.(png|jpg|jpeg|webp) ele vira o retrato em pontinhos;
-caso contrário é desenhado um cadeado (combina com cibersegurança).
+caso contrário é desenhado um sigilo original (olho + anéis de energia).
 """
 import html, json, math, sys
 from pathlib import Path
@@ -12,8 +12,8 @@ ASSETS = ROOT / "assets"
 COLS, ROWS, CELL = 36, 40, 5.2
 FONT = "'JetBrains Mono',ui-monospace,SFMono-Regular,Consolas,Menlo,monospace"
 THEMES = {
-    "dark":  dict(bg="#0d1117", panel="#111a24", line="#243447", text="#c9d1d9", dim="#7d8590", acc="#3ddc97", red="#ff5f56"),
-    "light": dict(bg="#ffffff", panel="#f6f8fa", line="#d0d7de", text="#1f2328", dim="#656d76", acc="#0a7f55", red="#cf222e"),
+    "dark":  dict(bg="#0b0b16", panel="#11111f", line="#2b2b4a", text="#c9d1d9", dim="#7d8590", acc="#8f7cff", red="#ff5f56"),
+    "light": dict(bg="#ffffff", panel="#f6f8fa", line="#d0d7de", text="#1f2328", dim="#656d76", acc="#5a3fd6", red="#cf222e"),
 }
 
 
@@ -29,6 +29,37 @@ def padlock():
                 g[r][c] = 0.9 if (r + c) % 3 == 0 else 0.6
             if 23 <= r <= 32 and (math.hypot(c - cx, r - 26) <= 2.2 or (r >= 26 and abs(c - cx) <= 1)):
                 g[r][c] = 0.0
+    return g
+
+
+def sigil():
+    """Emblema original: olho dentro de aneis de selo, com particulas orbitando."""
+    g = [[0.0] * COLS for _ in range(ROWS)]
+    cx, cy = (COLS - 1) / 2, (ROWS - 1) / 2
+    for r in range(ROWS):
+        for c in range(COLS):
+            dx, dy = c - cx, r - cy
+            d = math.hypot(dx, dy)
+            a = math.atan2(dy, dx)
+            v = 0.0
+            if 16.2 <= d <= 17.6:                       # anel externo
+                v = 0.9 if int((a + math.pi) / (2 * math.pi) * 24) % 2 == 0 else 0.45
+            if 12.3 <= d <= 13.3:                       # anel interno
+                v = max(v, 0.7)
+            if 13.3 < d < 16.2 and abs(math.sin(6 * a)) > 0.93 and d > 14:   # raios do selo
+                v = max(v, 0.55)
+            lid = 7.5 * math.sqrt(max(0.0, 1 - (dx / 11.0) ** 2))             # olho amendoado
+            if abs(dx) <= 11 and abs(abs(dy) - lid) <= 0.9:
+                v = max(v, 1.0)
+            if d <= 5.2 and abs(dy) <= lid:             # iris e pupila
+                v = max(v, 1.0 if d <= 2.6 else 0.55)
+            g[r][c] = v
+    for k in range(8):                                   # particulas de energia
+        a = 2 * math.pi * k / 8 + 0.2
+        for dr in (-0.6, 0.6):
+            x, y = round(cx + 14.8 * math.cos(a) + dr * math.cos(a)), round(cy + 14.8 * math.sin(a) + dr * math.sin(a))
+            if 0 <= x < COLS and 0 <= y < ROWS:
+                g[y][x] = 1.0
     return g
 
 
@@ -82,7 +113,7 @@ def render(cfg, theme, grid, is_photo):
 <rect x="24" y="50" width="262" height="262" rx="8" fill="{t["bg"]}" stroke="{t["line"]}"/>
 <text x="38" y="70" fill="{t["acc"]}" font-size="10" font-weight="700">VISUAL.MAP</text>
 {dots(grid, t, round(x0,1), 80, is_photo and theme == "light")}
-<text x="38" y="304" fill="{t["dim"]}" font-size="9">PTS {COLS*ROWS} · {"FOTO" if is_photo else "CADEADO"}</text>
+<text x="38" y="304" fill="{t["dim"]}" font-size="9">PTS {COLS*ROWS} · {"FOTO" if is_photo else "SIGILO"}</text>
 <rect x="302" y="50" width="554" height="262" rx="8" fill="{t["bg"]}" stroke="{t["line"]}"/>
 <text x="318" y="70" fill="{t["acc"]}" font-size="10" font-weight="700">SYSTEM.INFO</text>
 <circle class="blink" cx="520" cy="66" r="3" fill="{t["red"]}"/><text x="528" y="70" fill="{t["red"]}" font-size="9" font-weight="700">LIVE</text>
@@ -96,7 +127,7 @@ def render(cfg, theme, grid, is_photo):
 def main():
     cfg = json.loads((ASSETS / "profile.json").read_text(encoding="utf-8"))
     img = next((p for ext in ("png", "jpg", "jpeg", "webp") if (p := ASSETS / f"portrait.{ext}").exists()), None)
-    grid, is_photo = (photo(img), True) if img else (padlock(), False)
+    grid, is_photo = (photo(img), True) if img else (sigil(), False)
     for theme in THEMES:
         out = ASSETS / f"banner-{theme}.svg"
         out.write_text(render(cfg, theme, grid, is_photo), encoding="utf-8")
