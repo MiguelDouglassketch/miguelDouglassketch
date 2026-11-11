@@ -1,4 +1,4 @@
-name: Breakout das contribuicoes
+name: Pac-Man das contribuicoes
 
 on:
   schedule:
@@ -24,7 +24,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-          games: "breakout"
+          games: "pacman"
 
       - name: Publicar os SVGs na branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
