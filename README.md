@@ -10,7 +10,7 @@
 
 # Miguel Douglas
 
-**Python · SQL · Análise de dados**
+**Python · SQL · Análise de dados · cibersegurança**
 <br>
 Estudante de Análise e Desenvolvimento de Sistemas · Profissional de TI · Recife, PE
 
