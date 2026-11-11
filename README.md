@@ -33,6 +33,7 @@ Trabalho na área de TI de um órgão público federal, em Recife, com contato d
 |---|---|---|
 | Análise e Desenvolvimento de Sistemas | Estácio | Em andamento |
 | Técnico em Redes de Computadores | ETE | Concluído |
+| Técnico em Logística | ETE | concluído |  
 
 <div align="center">
 
